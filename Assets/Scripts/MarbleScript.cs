@@ -6,7 +6,7 @@ public class MarbleScript : MonoBehaviour
 {
     private Vector3 startPos;
     private Vector3 endPos;
-    private bool scored;
+    public bool scored;
     private Rigidbody marble;
     // Start is called before the first frame update
     void Start()
