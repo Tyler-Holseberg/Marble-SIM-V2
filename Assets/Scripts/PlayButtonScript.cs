@@ -14,7 +14,11 @@ public class PlayButtonScript : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Ball")
+        {
+            print("problem is scene switching");
+
             SceneManager.LoadScene("FreePlay");
+        }
     }
 
     // Update is called once per frame
