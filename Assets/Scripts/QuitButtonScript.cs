@@ -14,7 +14,6 @@ public class QuitButtonScript : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Ball") {
-            print("problem is scene switching");
             Application.Quit();
         }
     }

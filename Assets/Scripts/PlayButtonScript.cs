@@ -15,15 +15,10 @@ public class PlayButtonScript : MonoBehaviour
     {
         if (other.gameObject.name == "PlayPlane")
         {
-            //print("problem is scene switching");
-
              SceneManager.LoadScene("FreePlay");
-            
         }
         else if (other.gameObject.name == "QuitPlane")
         {
-            //print("problem is scene switching");
-            //application.quit isnt working but this does work for collision with that plane
             Application.Quit();
         }
     }
