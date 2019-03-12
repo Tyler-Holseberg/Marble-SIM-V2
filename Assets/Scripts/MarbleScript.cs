@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MarbleScript : MonoBehaviour
 {
@@ -33,11 +34,15 @@ public class MarbleScript : MonoBehaviour
             this.transform.position = startPos;
             marble.velocity = new Vector3(0, 0, 0);
             marble.angularVelocity = new Vector3(0, 0, 0);
+                   
+
+
         }
         else if (target.gameObject.name == "Goal")
         {
             scored = true;
             endPos = marble.transform.position;
+           
         }
     }
 }
