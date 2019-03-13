@@ -2,41 +2,44 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartSimulation : MonoBehaviour
+public class ResetButtonAnimation : MonoBehaviour
 {
     public GameObject marble;
-    public GameObject startTrigger;
-    public GameObject resetTrigger;
-
+    public GameObject player;
+    private Animator buttonPress;
     private Vector3 marbleStartPos;
 
     // Start is called before the first frame update
     void Start()
     {
+        buttonPress = GetComponent<Animator>();
         marbleStartPos = marble.transform.position;
     }
 
-
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == startTrigger.name) 
+        if (other.name == player.name)
         {
-            marble.GetComponent<Rigidbody>().isKinematic = false;
-            marble.GetComponent<Rigidbody>().useGravity = true;
+            buttonPress.SetTrigger("Cube On");
         }
 
-        if (other.gameObject.name == resetTrigger.name)
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.name == player.name)
         {
+            buttonPress.SetTrigger("Cube Off");
+
             marble.GetComponent<Rigidbody>().isKinematic = true;
             marble.GetComponent<Rigidbody>().useGravity = false;
 
             marble.transform.position = marbleStartPos;
         }
-
     }
+
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
