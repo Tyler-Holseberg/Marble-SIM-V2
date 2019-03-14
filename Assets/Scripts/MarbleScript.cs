@@ -23,7 +23,14 @@ public class MarbleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.TimePassed += Time.deltaTime;
+        //added this to an if so that time stops when the ball is scored
+        if(scored == false)
+        {
+            score.TimePassed += Time.deltaTime;
+
+        }
+        //score.TimePassed += Time.deltaTime;
+
         if (scored == true)
         {
             this.transform.position = endPos;
@@ -43,6 +50,16 @@ public class MarbleScript : MonoBehaviour
         }
         else if (target.gameObject.name == "Goal")
         {
+
+            scored = true;
+            marble.transform.position = startPos; //commented out to fix reset button
+            score.MarblesScored += 1;
+            
+
+
+
+
+            /* commented out to test a different method of keeping score
             scored = true;
             endPos = marble.transform.position;
             if (scored == false)
@@ -50,6 +67,8 @@ public class MarbleScript : MonoBehaviour
                 score.MarblesScored += 1;
             }
            
+            */
+
         }
     }
 }

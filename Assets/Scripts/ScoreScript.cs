@@ -22,7 +22,10 @@ public class ScoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(GetScore()); //added for testing
+        if(MarblesScored >= 1)
+        {
+            GetComponent<TextMesh>().text = GetScore().ToString();
+        }
     }
     float GetScore()
     {
