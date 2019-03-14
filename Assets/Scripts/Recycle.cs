@@ -16,17 +16,20 @@ public class Recycle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //tried detecting by tag
         if (other.name == track.name)
         {
-           StartCoroutine(ResetTrackAfterSeconds(waitTime));
+            Debug.Log("detected collision");
+            StartCoroutine(ResetTrackAfterSeconds(waitTime));
         }
     }
 
     IEnumerator ResetTrackAfterSeconds(float seconds) 
     {
-        print("WAITIG " + waitTime + " SECONDS!");
+        print("WAITING " + waitTime + " SECONDS!");
         yield return new WaitForSeconds(seconds);
         track.transform.position = trackStartPos;
+        Debug.Log("whats going on here");
     }
 
     // Update is called once per frame

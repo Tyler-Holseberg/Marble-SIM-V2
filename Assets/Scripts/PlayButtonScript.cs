@@ -8,19 +8,32 @@ public class PlayButtonScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+                    Debug.Log("collision is working");
+
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "PlayPlane")
+    
+        switch (other.gameObject.name)
         {
-             SceneManager.LoadScene("FreePlay");
+            case "lev1":
+                SceneManager.LoadScene("Level 1");
+                break;
+            case "lev2":
+                SceneManager.LoadScene("Level 2");
+                break;
+            case "freePlay":
+                SceneManager.LoadScene("FreePlay");
+                break;
+            case "Menu":
+                SceneManager.LoadScene("MenuScene");
+                break;
+            case "QuitCup":
+                Application.Quit(0);
+                break;
         }
-        else if (other.gameObject.name == "QuitPlane")
-        {
-            Application.Quit();
-        }
+
     }
 
     // Update is called once per frame
