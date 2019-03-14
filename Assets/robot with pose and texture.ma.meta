@@ -1,0 +1,395 @@
+fileFormatVersion: 2
+guid: f10b680ada790474aa497f6265fff8f1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Antenna_Base
+    100002: Antenna_Shaft
+    100004: Antenna_Top
+    100006: Chest
+    100008: Chest_Plate
+    100010: Head
+    100012: Head 1
+    100014: Hinge
+    100016: Hinge1
+    100018: Knob
+    100020: Knob_Connect
+    100022: L_Arm
+    100024: L_Arm_Joint
+    100026: L_Arm_Joint1
+    100028: L_Arm_Joint2
+    100030: L_Arm_Joint3
+    100032: L_Arm_Joint4
+    100034: L_Arm_Joint5
+    100036: L_Bottom_Finger
+    100038: L_Bottom_Finger 1
+    100040: L_Bottom_Finger1
+    100042: L_Bottom_Finger2
+    100044: L_Eye
+    100046: L_Hand
+    100048: L_Hand 1
+    100050: L_Mid_Finger
+    100052: L_Mid_Finger 1
+    100054: L_Mid_Finger1
+    100056: L_Mid_Finger2
+    100058: L_Shoulder_Socket
+    100060: L_Top_Finger
+    100062: L_Top_Finger 1
+    100064: L_Top_Finger1
+    100066: L_Top_Finger2
+    100068: Mouth
+    100070: Neck
+    100072: Neck_Joint1
+    100074: Neck_Joint2
+    100076: Nose
+    100078: pCube1
+    100080: pCube2
+    100082: R_Arm_Joint
+    100084: R_Arm_Joint1
+    100086: R_Arm_Joint2
+    100088: R_Arm_Joint3
+    100090: R_Arm_Joint4
+    100092: R_Arm_Joint5
+    100094: R_Bottom_Finger
+    100096: R_Bottom_Finger 1
+    100098: R_Bottom_Finger1
+    100100: R_Bottom_Finger2
+    100102: R_Eye
+    100104: R_Hand
+    100106: R_Hand 1
+    100108: R_Hand 2
+    100110: R_Mid_FInger
+    100112: R_Mid_Finger
+    100114: R_Mid_Finger1
+    100116: R_Mid_Finger2
+    100118: R_Shoulder_Socket
+    100120: R_Top_Finger
+    100122: R_Top_Finger 1
+    100124: R_Top_Finger1
+    100126: R_Top_Finger2
+    100128: //RootNode
+    100130: Torso
+    100132: Wheel
+    100134: Wheel 1
+    100136: Wheel_Holder
+    400000: Antenna_Base
+    400002: Antenna_Shaft
+    400004: Antenna_Top
+    400006: Chest
+    400008: Chest_Plate
+    400010: Head
+    400012: Head 1
+    400014: Hinge
+    400016: Hinge1
+    400018: Knob
+    400020: Knob_Connect
+    400022: L_Arm
+    400024: L_Arm_Joint
+    400026: L_Arm_Joint1
+    400028: L_Arm_Joint2
+    400030: L_Arm_Joint3
+    400032: L_Arm_Joint4
+    400034: L_Arm_Joint5
+    400036: L_Bottom_Finger
+    400038: L_Bottom_Finger 1
+    400040: L_Bottom_Finger1
+    400042: L_Bottom_Finger2
+    400044: L_Eye
+    400046: L_Hand
+    400048: L_Hand 1
+    400050: L_Mid_Finger
+    400052: L_Mid_Finger 1
+    400054: L_Mid_Finger1
+    400056: L_Mid_Finger2
+    400058: L_Shoulder_Socket
+    400060: L_Top_Finger
+    400062: L_Top_Finger 1
+    400064: L_Top_Finger1
+    400066: L_Top_Finger2
+    400068: Mouth
+    400070: Neck
+    400072: Neck_Joint1
+    400074: Neck_Joint2
+    400076: Nose
+    400078: pCube1
+    400080: pCube2
+    400082: R_Arm_Joint
+    400084: R_Arm_Joint1
+    400086: R_Arm_Joint2
+    400088: R_Arm_Joint3
+    400090: R_Arm_Joint4
+    400092: R_Arm_Joint5
+    400094: R_Bottom_Finger
+    400096: R_Bottom_Finger 1
+    400098: R_Bottom_Finger1
+    400100: R_Bottom_Finger2
+    400102: R_Eye
+    400104: R_Hand
+    400106: R_Hand 1
+    400108: R_Hand 2
+    400110: R_Mid_FInger
+    400112: R_Mid_Finger
+    400114: R_Mid_Finger1
+    400116: R_Mid_Finger2
+    400118: R_Shoulder_Socket
+    400120: R_Top_Finger
+    400122: R_Top_Finger 1
+    400124: R_Top_Finger1
+    400126: R_Top_Finger2
+    400128: //RootNode
+    400130: Torso
+    400132: Wheel
+    400134: Wheel 1
+    400136: Wheel_Holder
+    2100000: lambert3
+    2100002: lambert5
+    2100004: lambert2
+    2100006: lambert4
+    2300000: Antenna_Base
+    2300002: Antenna_Shaft
+    2300004: Antenna_Top
+    2300006: Chest
+    2300008: Chest_Plate
+    2300010: Head 1
+    2300012: Hinge
+    2300014: Hinge1
+    2300016: Knob
+    2300018: Knob_Connect
+    2300020: L_Arm_Joint
+    2300022: L_Arm_Joint1
+    2300024: L_Arm_Joint2
+    2300026: L_Arm_Joint3
+    2300028: L_Arm_Joint4
+    2300030: L_Arm_Joint5
+    2300032: L_Bottom_Finger 1
+    2300034: L_Bottom_Finger1
+    2300036: L_Bottom_Finger2
+    2300038: L_Eye
+    2300040: L_Hand 1
+    2300042: L_Mid_Finger 1
+    2300044: L_Mid_Finger1
+    2300046: L_Mid_Finger2
+    2300048: L_Shoulder_Socket
+    2300050: L_Top_Finger 1
+    2300052: L_Top_Finger1
+    2300054: L_Top_Finger2
+    2300056: Mouth
+    2300058: Neck_Joint1
+    2300060: Neck_Joint2
+    2300062: Nose
+    2300064: pCube1
+    2300066: pCube2
+    2300068: R_Arm_Joint
+    2300070: R_Arm_Joint1
+    2300072: R_Arm_Joint2
+    2300074: R_Arm_Joint3
+    2300076: R_Arm_Joint4
+    2300078: R_Arm_Joint5
+    2300080: R_Bottom_Finger 1
+    2300082: R_Bottom_Finger1
+    2300084: R_Bottom_Finger2
+    2300086: R_Eye
+    2300088: R_Hand 2
+    2300090: R_Mid_Finger
+    2300092: R_Mid_Finger1
+    2300094: R_Mid_Finger2
+    2300096: R_Shoulder_Socket
+    2300098: R_Top_Finger 1
+    2300100: R_Top_Finger1
+    2300102: R_Top_Finger2
+    2300104: Wheel 1
+    2300106: Wheel_Holder
+    3300000: Antenna_Base
+    3300002: Antenna_Shaft
+    3300004: Antenna_Top
+    3300006: Chest
+    3300008: Chest_Plate
+    3300010: Head 1
+    3300012: Hinge
+    3300014: Hinge1
+    3300016: Knob
+    3300018: Knob_Connect
+    3300020: L_Arm_Joint
+    3300022: L_Arm_Joint1
+    3300024: L_Arm_Joint2
+    3300026: L_Arm_Joint3
+    3300028: L_Arm_Joint4
+    3300030: L_Arm_Joint5
+    3300032: L_Bottom_Finger 1
+    3300034: L_Bottom_Finger1
+    3300036: L_Bottom_Finger2
+    3300038: L_Eye
+    3300040: L_Hand 1
+    3300042: L_Mid_Finger 1
+    3300044: L_Mid_Finger1
+    3300046: L_Mid_Finger2
+    3300048: L_Shoulder_Socket
+    3300050: L_Top_Finger 1
+    3300052: L_Top_Finger1
+    3300054: L_Top_Finger2
+    3300056: Mouth
+    3300058: Neck_Joint1
+    3300060: Neck_Joint2
+    3300062: Nose
+    3300064: pCube1
+    3300066: pCube2
+    3300068: R_Arm_Joint
+    3300070: R_Arm_Joint1
+    3300072: R_Arm_Joint2
+    3300074: R_Arm_Joint3
+    3300076: R_Arm_Joint4
+    3300078: R_Arm_Joint5
+    3300080: R_Bottom_Finger 1
+    3300082: R_Bottom_Finger1
+    3300084: R_Bottom_Finger2
+    3300086: R_Eye
+    3300088: R_Hand 2
+    3300090: R_Mid_Finger
+    3300092: R_Mid_Finger1
+    3300094: R_Mid_Finger2
+    3300096: R_Shoulder_Socket
+    3300098: R_Top_Finger 1
+    3300100: R_Top_Finger1
+    3300102: R_Top_Finger2
+    3300104: Wheel 1
+    3300106: Wheel_Holder
+    4300000: Chest
+    4300002: Chest_Plate
+    4300004: Hinge
+    4300006: Hinge1
+    4300008: Knob
+    4300010: Knob_Connect
+    4300012: L_Shoulder_Socket
+    4300014: R_Shoulder_Socket
+    4300016: L_Hand
+    4300018: L_Top_Finger
+    4300020: L_Top_Finger1
+    4300022: L_Top_Finger2
+    4300024: L_Mid_Finger
+    4300026: L_Mid_Finger1
+    4300028: L_Mid_Finger2
+    4300030: L_Bottom_Finger
+    4300032: L_Bottom_Finger1
+    4300034: L_Bottom_Finger2
+    4300036: L_Arm_Joint
+    4300038: L_Arm_Joint1
+    4300040: L_Arm_Joint2
+    4300042: L_Arm_Joint3
+    4300044: L_Arm_Joint4
+    4300046: L_Arm_Joint5
+    4300048: R_Hand
+    4300050: R_Top_Finger2
+    4300052: R_Top_Finger1
+    4300054: R_Top_Finger
+    4300056: R_Mid_Finger
+    4300058: R_Mid_Finger1
+    4300060: R_Mid_Finger2
+    4300062: R_Bottom_Finger
+    4300064: R_Bottom_Finger1
+    4300066: R_Bottom_Finger2
+    4300068: R_Arm_Joint
+    4300070: R_Arm_Joint1
+    4300072: R_Arm_Joint2
+    4300074: R_Arm_Joint3
+    4300076: R_Arm_Joint4
+    4300078: R_Arm_Joint5
+    4300080: Wheel
+    4300082: Wheel_Holder
+    4300084: Head
+    4300086: R_Eye
+    4300088: Nose
+    4300090: L_Eye
+    4300092: Mouth
+    4300094: Antenna_Base
+    4300096: Antenna_Shaft
+    4300098: Antenna_Top
+    4300100: pCube1
+    4300102: pCube2
+    4300104: Neck_Joint1
+    4300106: Neck_Joint2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
