@@ -8,7 +8,7 @@ public class PlayButtonScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-                    Debug.Log("collision is working");
+                    
 
     }
 
