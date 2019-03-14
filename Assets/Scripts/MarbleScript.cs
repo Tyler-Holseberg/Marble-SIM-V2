@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MarbleScript : MonoBehaviour
 {
+    ScoreScript score;
     private Vector3 startPos;
     private Vector3 endPos;
     public bool scored;
@@ -12,6 +13,7 @@ public class MarbleScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        score = FindObjectOfType<ScoreScript>();
         endPos = this.transform.position;
         startPos = this.transform.position;
         scored = false;
@@ -21,6 +23,7 @@ public class MarbleScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        score.TimePassed += Time.deltaTime;
         if (scored == true)
         {
             this.transform.position = endPos;
@@ -42,6 +45,10 @@ public class MarbleScript : MonoBehaviour
         {
             scored = true;
             endPos = marble.transform.position;
+            if (scored == false)
+            {
+                score.MarblesScored += 1;
+            }
            
         }
     }
