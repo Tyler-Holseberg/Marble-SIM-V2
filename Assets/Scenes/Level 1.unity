@@ -158,7 +158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd1f6c614b12479ea5d9199c5004125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  track: {fileID: 1370635863}
+  flat: {fileID: 1455220654}
+  rampBottom: {fileID: 1370635863}
+  RampTop: {fileID: 153022114}
 --- !u!65 &1052408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -322,7 +324,7 @@ GameObject:
   - component: {fileID: 95230434}
   m_Layer: 0
   m_Name: Flat
-  m_TagString: Untagged
+  m_TagString: Flat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -499,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660621310658468, guid: efe266538a8dcda4dbd04fbff7997053, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.107
       objectReference: {fileID: 0}
     - target: {fileID: 4660621310658468, guid: efe266538a8dcda4dbd04fbff7997053, type: 3}
       propertyPath: m_LocalPosition.z
@@ -888,12 +890,12 @@ PrefabInstance:
     - target: {fileID: 3020869630529892491, guid: f64139388c5dca342830a9379ceb986d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3020869630529892491, guid: f64139388c5dca342830a9379ceb986d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3020869630529892491, guid: f64139388c5dca342830a9379ceb986d,
         type: 3}
@@ -919,6 +921,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020869630529399981, guid: f64139388c5dca342830a9379ceb986d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Flat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f64139388c5dca342830a9379ceb986d, type: 3}
@@ -1639,7 +1646,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205830981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.467, y: 0.431, z: -0.66}
+  m_LocalPosition: {x: -0.454, y: 0.431, z: -0.66}
   m_LocalScale: {x: 0.005299479, y: 0.003953007, z: 0.053228296}
   m_Children: []
   m_Father: {fileID: 1200291392}
@@ -1655,8 +1662,8 @@ TextMesh:
   m_GameObject: {fileID: 1205830981}
   m_Text: "Objective: Get the marble from the \ngreen block to the red cup by \nbuilding
     a track with the available \npieces. To send the roll the marble, \npress the
-    green button with the \n     purple block. To reset the marble, \n      press
-    the red button. Place an \n          object in the blue box to recycle \n          it.\n"
+    green button with the \npurple block. To reset the marble, \npress the red button.
+    Place an \nobject in the blue box to recycle it.\n"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1.15
@@ -2065,6 +2072,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431537388}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1455220654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3020869630529399981, guid: f64139388c5dca342830a9379ceb986d,
+    type: 3}
+  m_PrefabInstance: {fileID: 583688417}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1462746768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,7 +2123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 583688419}
-  max: 5
+  max: 7
 --- !u!1 &1471608827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3213,11 +3226,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Start Button Frame
       objectReference: {fileID: 0}
-    - target: {fileID: 7720940863166276631, guid: 332f991ce642e47f98f290dee5b48883,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 67375a04c18c944c3bf494e82c19599c, type: 2}
     - target: {fileID: 7720940863166276628, guid: 332f991ce642e47f98f290dee5b48883,
         type: 3}
       propertyPath: marble
@@ -3228,6 +3236,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7720940863166276631, guid: 332f991ce642e47f98f290dee5b48883,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67375a04c18c944c3bf494e82c19599c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332f991ce642e47f98f290dee5b48883, type: 3}
 --- !u!1 &2117912117
