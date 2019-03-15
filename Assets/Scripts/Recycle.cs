@@ -4,50 +4,85 @@ using UnityEngine;
 
 public class Recycle : MonoBehaviour
 {
-    public List<GameObject> objectType;
-    private List<Vector3> objectStartPos = new List<Vector3>();
-    private static float waitTime = 3.0f;
+    public GameObject flat;
+    public GameObject rampBottom;
+    public GameObject RampTop;
+    private Quaternion flatStartRot;
+    private Quaternion bottomStartRot;
+    private Quaternion topStartRot;
+    private GameObject flatTemp;
+    private GameObject rampBottomTemp;
+    private GameObject RampTopTemp;
+
+
+
+    private float waitTime = 3.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Storing the start positions of the objects
-        for(int i = 0; i < objectType.Count; i++)
-        {
-            objectStartPos.Add(objectType[i].transform.position);
-        }
+        flatTemp = new GameObject();
+        flatTemp.transform.position = flat.transform.position;
+        flatTemp.transform.rotation = flat.transform.rotation;
 
-        foreach(Vector3 v in objectStartPos) {
-            print(v + "\n");
-        }
+        rampBottomTemp = new GameObject();
+        rampBottomTemp.transform.position = rampBottom.transform.position;
+        rampBottomTemp.transform.rotation = rampBottom.transform.rotation;
+
+        RampTopTemp = new GameObject();
+        RampTopTemp.transform.position = RampTop.transform.position;
+        RampTopTemp.transform.rotation = RampTop.transform.rotation;
+        //trackStartPos = track.transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        foreach (GameObject track in objectType) {
-            if (other.name == track.name || other.CompareTag(track.tag))
-            {
-                Debug.Log("detected collision");
-                print(track.name);
-                print(objectType.IndexOf(track));
 
-                StartCoroutine(ResetTrackAfterSeconds(waitTime, track, 
-                objectStartPos[objectType.IndexOf(track)]));
-            }
+        //try detecting by tag
+        if (other.gameObject.tag == "Flat")
+        {
+            Debug.Log("detected collision");
+
+            //StartCoroutine(ResetTrackAfterSeconds(waitTime));
+
+            other.transform.position = flatTemp.transform.position;
+            other.transform.rotation = flatTemp.transform.rotation;
+
+        }
+        else if (other.gameObject.tag == "Bottom")
+        {
+            other.transform.position = rampBottomTemp.transform.position;
+            other.transform.rotation = rampBottomTemp.transform.rotation;
+        }
+        else if (other.gameObject.tag == "Top")
+        {
+            other.transform.position = RampTopTemp.transform.position;
+            other.transform.rotation = RampTopTemp.transform.rotation;
         }
 
     }
 
-    IEnumerator ResetTrackAfterSeconds(float seconds, GameObject piece, Vector3 startingPlace) 
+
+    /*I dont think we need to use a coroutine for this
+
+    IEnumerator ResetTrackAfterSeconds(float seconds) 
     {
         print("WAITING " + waitTime + " SECONDS!");
         yield return new WaitForSeconds(seconds);
-        piece.transform.position = startingPlace;
+        //flat.transform.position = flatTemp.transform.position;
         Debug.Log("whats going on here");
     }
+    
+    */
+
+
+
+
 
     // Update is called once per frame
     void Update()
     {
     }
+
+
 }
