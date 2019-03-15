@@ -126,6 +126,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 9070fc57bd60d6542aa1a61d4be45ec6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 9070fc57bd60d6542aa1a61d4be45ec6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 9070fc57bd60d6542aa1a61d4be45ec6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 9070fc57bd60d6542aa1a61d4be45ec6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 9070fc57bd60d6542aa1a61d4be45ec6, type: 3}
       propertyPath: m_TagString
       value: Flat

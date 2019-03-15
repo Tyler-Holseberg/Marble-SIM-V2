@@ -38,11 +38,9 @@ public class Recycle : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        //try detecting by tag
+        
         if (other.gameObject.tag == "Flat")
         {
-            Debug.Log("detected collision");
-
             //StartCoroutine(ResetTrackAfterSeconds(waitTime));
 
             other.transform.position = flatTemp.transform.position;
