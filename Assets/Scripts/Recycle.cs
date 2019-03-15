@@ -4,31 +4,45 @@ using UnityEngine;
 
 public class Recycle : MonoBehaviour
 {
-    public GameObject track;
-    private Vector3 trackStartPos;
-    private float waitTime = 3.0f;
+    public List<GameObject> objectType;
+    private List<Vector3> objectStartPos = new List<Vector3>();
+    private static float waitTime = 3.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        trackStartPos = track.transform.position;
+        //Storing the start positions of the objects
+        for(int i = 0; i < objectType.Count; i++)
+        {
+            objectStartPos.Add(objectType[i].transform.position);
+        }
+
+        foreach(Vector3 v in objectStartPos) {
+            print(v + "\n");
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        //tried detecting by tag
-        if (other.name == track.name)
-        {
-            Debug.Log("detected collision");
-            StartCoroutine(ResetTrackAfterSeconds(waitTime));
+        foreach (GameObject track in objectType) {
+            if (other.name == track.name || other.CompareTag(track.tag))
+            {
+                Debug.Log("detected collision");
+                print(track.name);
+                print(objectType.IndexOf(track));
+
+                StartCoroutine(ResetTrackAfterSeconds(waitTime, track, 
+                objectStartPos[objectType.IndexOf(track)]));
+            }
         }
+
     }
 
-    IEnumerator ResetTrackAfterSeconds(float seconds) 
+    IEnumerator ResetTrackAfterSeconds(float seconds, GameObject piece, Vector3 startingPlace) 
     {
         print("WAITING " + waitTime + " SECONDS!");
         yield return new WaitForSeconds(seconds);
-        track.transform.position = trackStartPos;
+        piece.transform.position = startingPlace;
         Debug.Log("whats going on here");
     }
 

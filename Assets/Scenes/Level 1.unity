@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,7 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd1f6c614b12479ea5d9199c5004125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  track: {fileID: 1370635863}
+  objectType:
+  - {fileID: 915606363}
+  - {fileID: 1370635863}
+  - {fileID: 153022114}
 --- !u!65 &1052408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -471,6 +474,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984216107502624906, guid: 78c885dfdb6210446a4c2830721602e3,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984216107502624906, guid: 78c885dfdb6210446a4c2830721602e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c885dfdb6210446a4c2830721602e3, type: 3}
@@ -920,6 +933,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5129277249088666991, guid: f64139388c5dca342830a9379ceb986d,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5129277249088666991, guid: f64139388c5dca342830a9379ceb986d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f64139388c5dca342830a9379ceb986d, type: 3}
 --- !u!4 &583688418 stripped
@@ -1102,7 +1125,7 @@ Transform:
   - {fileID: 335983118}
   - {fileID: 1052406}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882380877
 GameObject:
@@ -1396,8 +1419,44 @@ Transform:
   - {fileID: 1431537389}
   - {fileID: 1254370915}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: -89.399}
+--- !u!1 &915606363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3020869630529399981, guid: f64139388c5dca342830a9379ceb986d,
+    type: 3}
+  m_PrefabInstance: {fileID: 583688417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &986638288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1310807602}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 986638289}
+  m_Layer: 0
+  m_Name: robot with pose and texture (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986638289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1310807602}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986638288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159468815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1670,7 @@ Transform:
   - {fileID: 495223662}
   - {fileID: 1205830982}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205830981
 GameObject:
@@ -1938,6 +1997,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552948678714127447, guid: eb8fefce6578da94bb885ebaa574ce17,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552948678714127447, guid: eb8fefce6578da94bb885ebaa574ce17,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb8fefce6578da94bb885ebaa574ce17, type: 3}
