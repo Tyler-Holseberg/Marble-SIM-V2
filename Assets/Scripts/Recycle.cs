@@ -14,8 +14,8 @@ public class Recycle : MonoBehaviour
     private GameObject rampBottomTemp;
     private GameObject RampTopTemp;
 
-    
-    
+
+
     private float waitTime = 3.0f;
 
     // Start is called before the first frame update
@@ -37,7 +37,7 @@ public class Recycle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+
         //try detecting by tag
         if (other.gameObject.tag == "Flat")
         {
@@ -49,7 +49,7 @@ public class Recycle : MonoBehaviour
             other.transform.rotation = flatTemp.transform.rotation;
 
         }
-        else if(other.gameObject.tag == "Bottom")
+        else if (other.gameObject.tag == "Bottom")
         {
             other.transform.position = rampBottomTemp.transform.position;
             other.transform.rotation = rampBottomTemp.transform.rotation;
@@ -74,11 +74,11 @@ public class Recycle : MonoBehaviour
     }
     
     */
-    
-    
-    
-    
-    
+
+
+
+
+
     // Update is called once per frame
     void Update()
     {
