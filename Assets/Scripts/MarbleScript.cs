@@ -54,20 +54,31 @@ public class MarbleScript : MonoBehaviour
             scored = true;
             marble.transform.position = startPos; //commented out to fix reset button
             score.MarblesScored += 1;
-            
+
+
+        }
+        
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.name == "antiGravity")
+        {
+           // print("collision bruh");
+            marble.GetComponent<Rigidbody>().useGravity = false;
 
 
 
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == "antiGravity")
+        {
+            //print("collision bruh");
+            marble.GetComponent<Rigidbody>().useGravity = true;
 
-            /* commented out to test a different method of keeping score
-            scored = true;
-            endPos = marble.transform.position;
-            if (scored == false)
-            {
-                score.MarblesScored += 1;
-            }
-           
-            */
+
 
         }
     }
