@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class MarbleCollision : MonoBehaviour
 {
-    public AudioSource audioClip;
+    public AudioClip marbleSound;
 
     void Start()
     {
-        audioClip = GetComponent<AudioSource>();
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = marbleSound;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.name == "table")
+
+        switch (other.gameObject.name)
         {
-            audioClip.Play();
+            case "table":
+                GetComponent<AudioSource>().Play();
+                break;
         }
     }
 }
