@@ -13,13 +13,18 @@ public class PortalScript : MonoBehaviour
     void Start()
     {
         //change this so this is updated as the portal moves and test in update
-        //Vector3 direction = dirTarget.transform.position - Portal2.transform.position;
+        Vector3 direction = dirTarget.transform.position - Portal2.transform.position;
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = dirTarget.transform.position - Portal2.transform.position;
+        direction = dirTarget.transform.position - Portal2.transform.position;
+        print(direction);
+        print(dirTarget.transform.position);
+        print(Portal2.transform.position);
     }
 
     void OnTriggerEnter(Collider other)
@@ -30,8 +35,10 @@ public class PortalScript : MonoBehaviour
             
             tempVelocity = marble.GetComponent<Rigidbody>().velocity;
             marble.GetComponent<Rigidbody>().velocity = (direction.normalized * tempVelocity.magnitude) * 2;
+            //print(marble.GetComponent<Rigidbody>().velocity);
+            //print((direction.normalized * tempVelocity.magnitude) * 2);
             marble.transform.position = Portal2.transform.position;
-            // marble.GetComponent<Rigidbody>().angularVelocity = tempVelocity.GetComponent<Rigidbody>().angularVelocity;
+           // marble.GetComponent<Rigidbody>().angularVelocity = tempVelocity.GetComponent<Rigidbody>().angularVelocity;
 
 
         }

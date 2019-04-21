@@ -21,7 +21,10 @@ public class PlayButtonScript : MonoBehaviour
                 SceneManager.LoadScene("Level 1");
                 break;
             case "lev2":
-                SceneManager.LoadScene("Level 2");
+                SceneManager.LoadScene("Level 1");
+                break;
+            case "lev3":
+                SceneManager.LoadScene("Level 1");
                 break;
             case "freePlay":
                 SceneManager.LoadScene("FreePlay");

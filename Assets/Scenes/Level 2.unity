@@ -1611,12 +1611,12 @@ GameObject:
   - component: {fileID: 1200291390}
   - component: {fileID: 1200291389}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1200291389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3308,10 +3308,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "Objective: Get the marble from the \ngreen block to the red cup by \nbuilding
-    a track with the available \npieces. To send the roll the marble, \npress the
-    green button with the \npurple block. To reset the marble, \npress the red button.
-    Place an \nobject in the blue box to recycle it.\n"
+  m_text: "Objective: Get the marble from the \ngreen starting track to the red cup.\nThe
+    transparent green zone is an \nanti-gravity zone. This can be used \nto help the
+    marble reach the cup."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -3357,7 +3356,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 104
+  m_firstOverflowCharacterIndex: 107
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3380,12 +3379,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1984841073}
-    characterCount: 281
+    characterCount: 177
     spriteCount: 0
-    spaceCount: 59
-    wordCount: 52
+    spaceCount: 34
+    wordCount: 32
     linkCount: 0
-    lineCount: 8
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
