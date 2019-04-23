@@ -6,6 +6,7 @@ MonoImporter:
   defaultReferences:
   - marbleRollingSound: {fileID: 8300000, guid: cb5bb92ae9cf5e844bea0738a25c3955,
       type: 3}
+  - woodCollision: {fileID: 8300000, guid: b918603dcbc6e414faa266c3f734bcea, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

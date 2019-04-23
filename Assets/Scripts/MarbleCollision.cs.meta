@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - marbletoWoodSound: {fileID: 8300000, guid: 4183cd04189a61249a4aad090b702a88, type: 3}
+  - marbletoCupSound: {fileID: 8300000, guid: f805585f332ee5c4f8d00c75ad3f004d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

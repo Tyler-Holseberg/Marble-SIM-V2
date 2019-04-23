@@ -1973,9 +1973,8 @@ GameObject:
   - component: {fileID: 1021120194}
   - component: {fileID: 1021120193}
   - component: {fileID: 1021120198}
-  - component: {fileID: 1021120200}
   - component: {fileID: 1021120199}
-  - component: {fileID: 1021120201}
+  - component: {fileID: 1021120200}
   - component: {fileID: 1021120202}
   m_Layer: 0
   m_Name: marble
@@ -2102,6 +2101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marbletoWoodSound: {fileID: 8300000, guid: 4183cd04189a61249a4aad090b702a88, type: 3}
+  marbletoCupSound: {fileID: 0}
 --- !u!82 &1021120200
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2198,19 +2198,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1021120201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021120192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 731e994cf9edfa848b350a53d2163a60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  marbletoCupSound: {fileID: 8300000, guid: f805585f332ee5c4f8d00c75ad3f004d, type: 3}
 --- !u!82 &1021120202
 AudioSource:
   m_ObjectHideFlags: 0
