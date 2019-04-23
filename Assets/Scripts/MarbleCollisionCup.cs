@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MarbleCollision : MonoBehaviour
+public class MarbleCollisionCup : MonoBehaviour
 {
-    public AudioClip marbletoWoodSound;
+    public AudioClip marbletoCupSound;
 
+    // Start is called before the first frame update
     void Start()
     {
         GetComponent<AudioSource>().playOnAwake = false;
-        GetComponent<AudioSource>().clip = marbletoWoodSound;
+        GetComponent<AudioSource>().clip = marbletoCupSound;
     }
 
     void OnCollisionEnter(Collision other)
@@ -17,11 +18,9 @@ public class MarbleCollision : MonoBehaviour
 
         switch (other.gameObject.name)
         {
-            case "table":
+            case "menu":
                 GetComponent<AudioSource>().Play();
                 break;
-
-            //also play that sound for collisions with blocks?
         }
     }
 }
