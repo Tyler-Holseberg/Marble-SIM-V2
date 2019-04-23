@@ -22,9 +22,9 @@ public class PortalScript : MonoBehaviour
     void Update()
     {
         direction = dirTarget.transform.position - Portal2.transform.position;
-        print(direction);
-        print(dirTarget.transform.position);
-        print(Portal2.transform.position);
+        //print(direction);
+       // print(dirTarget.transform.position);
+        //print(Portal2.transform.position);
     }
 
     void OnTriggerEnter(Collider other)
