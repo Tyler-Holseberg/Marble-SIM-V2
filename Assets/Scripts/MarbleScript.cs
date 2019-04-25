@@ -9,10 +9,13 @@ public class MarbleScript : MonoBehaviour
     private Vector3 startPos;
     private Vector3 endPos;
     public bool scored;
-    private Rigidbody marble;
+    public Rigidbody marble;
+    public AudioClip marbletoCupSound;
+
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<AudioSource>().playOnAwake = false;
         score = FindObjectOfType<ScoreScript>();
         endPos = this.transform.position;
         startPos = this.transform.position;
@@ -33,7 +36,7 @@ public class MarbleScript : MonoBehaviour
 
         if (scored == true)
         {
-            this.transform.position = endPos;
+            this.transform.position = new Vector3(0, 0, 0); //endPos;
             marble.velocity = new Vector3(0, 0, 0);
             marble.angularVelocity = new Vector3(0, 0, 0);
         }
@@ -50,9 +53,14 @@ public class MarbleScript : MonoBehaviour
         }
         else if (target.gameObject.name == "Goal")
         {
-
+            GetComponent<AudioSource>().clip = marbletoCupSound;
+            GetComponent<AudioSource>().Play();
+            print("dumb");
+            
             scored = true;
-            marble.transform.position = startPos; //commented out to fix reset button
+            //marble.transform.position = startPos; //commented out to fix reset button
+            //marble.velocity = new Vector3(0, 0, 0);
+            //marble.angularVelocity = new Vector3(0, 0, 0);
             score.MarblesScored += 1;
 
 
@@ -64,7 +72,7 @@ public class MarbleScript : MonoBehaviour
     {
         if (other.gameObject.name == "antiGravity")
         {
-           // print("collision bruh");
+            print("collision bruh");
             marble.GetComponent<Rigidbody>().useGravity = false;
 
 

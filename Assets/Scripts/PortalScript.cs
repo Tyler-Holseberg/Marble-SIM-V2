@@ -29,12 +29,12 @@ public class PortalScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Marble")
+        if (other.gameObject.name == "marble")
         {
-           
-            
+
+            print("auauau");
             tempVelocity = marble.GetComponent<Rigidbody>().velocity;
-            marble.GetComponent<Rigidbody>().velocity = (direction.normalized * tempVelocity.magnitude) * 2;
+            marble.GetComponent<Rigidbody>().velocity = (direction.normalized * tempVelocity.magnitude) * 1.9f;
             //print(marble.GetComponent<Rigidbody>().velocity);
             //print((direction.normalized * tempVelocity.magnitude) * 2);
             marble.transform.position = Portal2.transform.position;

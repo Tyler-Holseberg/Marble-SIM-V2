@@ -20,12 +20,12 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        print(OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick));
-        leftAxis = (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick));
+       // print(OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick));
+       // leftAxis = (OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick));
         Vector3 pos = transform.position;
 
-        pos.z += speed * leftAxis.y * Time.deltaTime;
-        pos.x += speed * leftAxis.x * Time.deltaTime;
+        //pos.z += speed * leftAxis.y * Time.deltaTime;
+        //pos.x += speed * leftAxis.x * Time.deltaTime;
 
         if (Input.GetKey("w"))
         {

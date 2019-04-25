@@ -9,7 +9,11 @@ public class TrackCollisionSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+              
         GetComponent<AudioSource>().playOnAwake = false;
+        
+
+
     }
 
     // Update is called once per frame
@@ -48,4 +52,7 @@ public class TrackCollisionSound : MonoBehaviour
                 break;
         }
     }
+
+    
 }
+
