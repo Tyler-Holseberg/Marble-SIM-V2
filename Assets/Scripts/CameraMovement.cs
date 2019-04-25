@@ -43,6 +43,14 @@ public class CameraMovement : MonoBehaviour
         {
             pos.x -= speed * Time.deltaTime;
         }
+        if (Input.GetKey("z"))
+        {
+            pos.y += speed * Time.deltaTime;
+        }
+        if (Input.GetKey("x"))
+        {
+            pos.y -= speed * Time.deltaTime;
+        }
 
 
         transform.position = pos;
